@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+   
+    font: 16px/24px Yu Gothic, YuGothic, Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, Arial, Verdana, Sans-Serif;
+}
+#about{
+    height: 120%;
+    width: 100%;
+    background-color: rgb(239, 229, 229);
+    /* overflow: hidden; */
+}
+.column {
+ 
+  /* float: left; */
+  width: 29.3%;
+  margin-bottom: 6px;
+  padding: 0 8px;
+  margin-left: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  /* margin-left: ; */
+ 
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+ 
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  #about{
+    height: 260%;
+    width: 100%;
+  }
+  .card{
+    margin-left: -40px;
+  }
+
+ 
+
+
+
+}
+
+
+/* serrvice section */
+#services{
+  height: 70%;
+  width: 100%;
+  
+  /* background-color: rgb(232, 226, 226); */
+}
+.middle{
+  height: 40%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  /* margin-left: 412px; */
+  }
+  
+  .cards{
+    /* height: 189px;
+    width: 220px;
+    background-color: #000000; */
+    display: flex;
+    
+    margin-left: 220px;
+    margin-top: 10px;
+  }
+  .carded{
+    height: 189px;
+    width: 220px;
+    background-color: rgb(255, 244, 244);
+    margin: 29px;
+    border-radius: 10px;
+  }
+  .heading{
+    margin-left: 20px;
+    font-weight: 600;
+  }
+  .circle{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(19, 197, 197, 0.582);
+    margin-left: 130px;
+    margin-top: 40px;
+    border-radius: 50%;
+  }
+  .circle2{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(10, 203, 51, 0.582);
+    left: 87%;
+    margin-top: 240px;
+    border-radius: 50%;
+  }
+  .circle3{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(149, 237, 27, 0.466);
+    left: 90%;
+    margin-top: 40px;
+    border-radius: 12px;
+  }
+  .circle4{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(19, 197, 197, 0.582);
+    margin-left: 180px;
+    margin-top: 240px;
+    border-radius: 12px;
+  }
+  .carded:hover{
+    background-color: rgb(234, 118, 118);
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    box-shadow:0 0 5px rgb(183, 182, 182), 0 0 10px rgb(190, 189, 189), 0 0 15px rgb(165, 165, 165) ;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .carded img{
+    margin-left: 80px;
+    margin-top: 20px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carded h3{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .carded p{
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  
+  }
+
+  /* service section */
+ #service{
+  height: 115%;
+  width: 100%;
+  /* background-color: red; */
+ }
+ .head{
+  text-align: center;
+  font-weight: 600;
+  margin-top: 12px;
+  color: rgb(0, 0, 0);
+ }
+ #back{
+  height: 80%;
+  width: 70%;
+  /* background-color: rgb(239, 219, 219); */
+  margin-left: 220px;
+ 
+  
+ } 
+ .photos{
+  margin-left: 35px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  display: flex;
+  
+  
+}
+.photo{
+  height: 347px;
+  width: 490px;
+  /* background-color: #000; */
+  margin: 12px;
+  border-radius: 4px;
+ border: 2px solid black;
+
+}
+.photo:hover{
+  border: 2px solid black;
+  background-color: rgba(29, 120, 120, 0.24);
+}
+.photo img{
+  height: 200px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.btm{
+  /* position: absolute; */
+  margin-top: -10px;
+  margin-left: 70px;
+  padding: 2px 16px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgb(10, 36, 165);
+  font-weight: 600;
+  color: #fff;
+  font-size: 12px;
+}
+.photo h3{
+  margin-left: 50px;
+  font-weight: 600;
+  line-height: 39px;
+  color: crimson;
+}
+ 
+span{
+  color: #288ba8;
+}
+ 
+ 
+  /* end service */
+
+  /* contact page :start */
+  
+.contain {
+  background-color: #eee;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+div.form {
+  background-color: #eee;
+}
+.contact-wrapper {
+  margin: auto 0;
+}
+
+.submit-btn {
+  float: left;
+}
+.reset-btn {
+  float: right;
+}
+
+.form-headline:after {
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 10px;
+  border-bottom: 3px solid #ec1c24;
+}
+
+.highlight-text {
+  color: #ec1c24;
+}
+
+.hightlight-contact-info {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-text-grey {
+  font-weight: 500;
+}
+
+.email-info {
+    margin-top: 20px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  font-family: 'Roboto', sans-serif;
+}
+
+.required-input {
+  color: black;
+}
+@media (min-width: 600px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+h3,
+ul {
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.form-input:focus,
+textarea:focus{
+  outline: 1.5px solid #ec1c24;
+}
+
+.form-input,
+textarea {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .wrapper > * {
+    padding: 2em 2em;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts {
+  color: #212d31;
+}
+
+.form {
+  background: #fff;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+form label {
+  display: block;
+}
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+button,
+.submit-btn,
+.form-input,
+textarea {
+  padding: 1em;
+}
+
+button, .submit-btn {
+  background: transparent;
+  border: 1px solid #ec1c24;
+  color: #ec1c24;
+  border-radius: 15px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+button:hover, .submit-btn:hover,
+button:focus , .submit-btn:focus{
+  background: #ec1c24;
+  outline: 0;
+  color: #eee;
+}
+.error {
+  color: #ec1c24;
+}
+
+
+  /* end contact apge */
+@media screen and (max-width: 650px) {
+  #services {
+    width: 100%;
+    height: 140%;
+  }
+   .cards{
+  
+    flex-direction: column;
+    margin-left: 200px;
+    margin-top: 0;
+  }
+  .middle{
+    height: 100%;
+  }
+  .circle{
+    margin-left: 14px;
+    margin-top: 4px;
+    display: none;
+  }
+  .circle2{
+    margin-left: -14px;
+    margin-top: 954px;
+    display: none;
+  }
+  .circle3{
+    margin-left: -14px;
+    margin-top: 54px;
+    z-index: -99;
+    display: none;
+  }
+  .circle4{
+    margin-left: -14px;
+    margin-top: 54px;
+    z-index: -99;
+    display: none;
+  }
+  #service{
+    height: 180%;
+  }
+  .photo img{
+    margin-left: 75px;
+  }
+  .photo{
+    margin-left: -148px;
+  }
+
+
+
+
+
+
+}
+
+.logoMarqueeSection {
+  padding-top: 8vh;
+  padding-bottom: 5vh;
+  overflow: hidden;
+}
+
+#logoMarqueeSection {
+  max-width: 1920px!important;
+  margin: 0 auto;
+}
+
+.default-content-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    width: 100%;
+    min-height: 100vh;
+}
+
+div.marquee>a>img {
+  /* width: 50% !important; */
+  margin-top: 30px;
+  height: 40px;
+}
+
+.logoMarqueeSection>div>div {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 0;
+}
+
+.marquee-wrapper {
+  display:  inline-block;
+  white-space: nowrap;
+}
+
+.marquee {
+    display:  inline-block;
+    white-space: nowrap;
+    position: relative;
+    transform: translate3d(0%, 0, 0);
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.marquee a {
+    display:  inline-block;
+    white-space: nowrap;
+    padding-right: 5.4rem;
+}
+
+
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
